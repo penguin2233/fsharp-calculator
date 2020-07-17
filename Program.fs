@@ -50,5 +50,6 @@ let main argv =
         | "-" -> printfn "the answer is %d" (z-y)
         | "/" -> printfn "the answer is %f" (x/w)
         | _ -> printfn "invalid option bruh"
-
+    printfn "press any key to exit"
+    System.Console.ReadKey() |> ignore // wait for user input
     0 // Return an integer exit code
