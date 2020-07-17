@@ -14,11 +14,12 @@ let mathsTunes =  async {
     fs.Close |> ignore
     let pinnedArray:GCHandle = GCHandle.Alloc(buffer, GCHandleType.Pinned)
     let bufferptr:IntPtr = pinnedArray.AddrOfPinnedObject()
-    let fuckyou32:int = 0
-    let fuckyou64:int64 = int64(fuckyou32)
+    let howtomakeint64with0:int = 0
+    let int64with0:int64 = int64(howtomakeint64with0)
+    // I don't care about this email address. However, if you wish to modify and publish the source/binary, I would suggest registering your own Bass.Net license. 
     BassNet.Registration("dm4.bade@gmail.com", "2X9222318152222")
     Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DSOUND, zero) |> ignore
-    let stream = Bass.BASS_StreamCreateFile(bufferptr, fuckyou64, length64, BASSFlag.BASS_SAMPLE_LOOP)
+    let stream = Bass.BASS_StreamCreateFile(bufferptr, int64with0, length64, BASSFlag.BASS_SAMPLE_LOOP)
     Bass.BASS_ChannelPlay(stream, true) |> ignore
 }
 
