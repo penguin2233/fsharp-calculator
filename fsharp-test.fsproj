@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net451</TargetFramework>
+    <RootNamespace>fsharp_test</RootNamespace>
+    <ReferencePath>C:\Users\Cheuk\Downloads\Bass24.Net\</ReferencePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bass.Net">
+      <HintPath>..\..\..\Downloads\Bass24.Net\v4.5\Bass.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
